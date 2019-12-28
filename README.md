@@ -14,6 +14,27 @@
     -	Heroku
 ## Giao diện
 - Màn hình trang chủ
-<img src="E:\1">
+![1](https://user-images.githubusercontent.com/58540673/71539799-290ec380-2974-11ea-9475-5a35d65c92ab.png)
+![2](https://user-images.githubusercontent.com/58540673/71539809-607d7000-2974-11ea-92c9-e77f6165bd34.png)
+## Màn hình danh mục
+![3](https://user-images.githubusercontent.com/58540673/71539821-af2b0a00-2974-11ea-8041-6ffe5bb89ca9.png)
+## Màn hình tài khoản
+![4](https://user-images.githubusercontent.com/58540673/71539822-b5b98180-2974-11ea-880a-7df8d25597d1.png)
+## Màn hình đăng kí
+![5](https://user-images.githubusercontent.com/58540673/71539823-b6521800-2974-11ea-9360-003819f5e8c4.png)
+
+![6](https://user-images.githubusercontent.com/58540673/71539824-b7834500-2974-11ea-923b-f630a85f4fbb.png)
+## Màn hình đăng nhập
+![7](https://user-images.githubusercontent.com/58540673/71539825-b8b47200-2974-11ea-8139-60f842d988a3.png)
+ ## Màn hình tài khoản đã đăng nhập
+![8](https://user-images.githubusercontent.com/58540673/71539827-b94d0880-2974-11ea-9432-281cafb97842.png)
+## Màn hình danh sách sản phẩm
+![9](https://user-images.githubusercontent.com/58540673/71539828-b9e59f00-2974-11ea-8b85-2bb04d741fb3.png)
+## Màn hình chi tiết sản phẩm
+![10](https://user-images.githubusercontent.com/58540673/71539829-bbaf6280-2974-11ea-9645-4cd5dfe1c8d7.png)
+## Màn hình giỏ hàng Màn hình giỏ hàng
+![11](https://user-images.githubusercontent.com/58540673/71539830-bce08f80-2974-11ea-867a-35079864a6ed.png)
+![12](https://user-images.githubusercontent.com/58540673/71539832-beaa5300-2974-11ea-9403-77785c01e36b.png)
+
 
    
