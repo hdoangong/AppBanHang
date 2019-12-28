@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/signup_confirm_dialog_container_constraintlayout">
+
+    <TextView
+        android:id="@+id/success"
+        style="@style/signup_confirm_dialog_success"
+        android:text="@string/success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/please"
+        style="@style/signup_confirm_dialog_please"
+        android:text="@string/login_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success" />
+
+
+    <TextView
+        android:id="@+id/not_now"
+        style="@style/signup_confirm_dialog_notnow"
+        android:text="@string/not_now"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/please" />
+
+    <TextView
+        android:id="@+id/login_button"
+        style="@style/signup_confirm_dialog_login"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/please" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

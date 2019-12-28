@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/category_fragment_linear_layout">
+
+
+<!--    Thanh tìm kiếm -->
+        <SearchView
+            android:id="@+id/search_bar"
+            style="@style/category_fragment_search_view" />
+
+    <androidx.core.widget.NestedScrollView style="@style/category_fragment_nest_scroll_view">
+
+        <LinearLayout style="@style/category_fragment_scroll_linear_layout">
+
+
+            <!--                        Gia đình - Nhà cửa -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Gia đình - Nhà cửa" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_giadinh_nhacua"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--                        Công nghệ -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Công nghệ" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_congnghe"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--                        Hàng tiêu dùng - Thực phẩm -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Hàng tiêu dùng - Thực phẩm" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_hangtieudung_thucpham"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--                        Thời trang -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Thời trang" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_thoitrang"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--                    Công việc -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Công việc" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_congviec"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <!--                    Giải trí -->
+            <TextView
+                style="@style/category_fragment_item_group_text_view"
+                android:text="Giải trí" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_giaitri"
+                style="@style/category_fragment_item_group_recycler_view"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

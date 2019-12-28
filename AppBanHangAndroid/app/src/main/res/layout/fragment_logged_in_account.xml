@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/logged_in_account_container_nestedscrollview">
+
+    <LinearLayout style="@style/logged_in_account_container_linearlayout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/logged_in_account_information_constraintlayout">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/avatar_container"
+                style="@style/logged_in_account_avatar_cardview"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    style="@style/logged_in_account_avatar_imageview" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                style="@style/logged_in_account_information_container_linearlayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/avatar_container"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/logged_in_account_name"
+                    style="@style/logged_in_account_name_textview" />
+
+                <TextView
+                    android:id="@+id/logged_in_account_mail"
+                    style="@style/logged_in_account_mail_textview" />
+
+                <TextView
+                    android:id="@+id/logged_in_account_phone"
+                    style="@style/logged_in_account_phone_textview" />
+
+                <LinearLayout style="@style/logged_in_account_logout_linearlayout">
+
+                    <TextView
+                        android:id="@+id/logout_btn"
+                        style="@style/logged_in_account_logout_textview"
+                        android:text="@string/log_out" />
+
+                    <ImageView
+                        style="@style/logged_in_account_logout_imageview"
+                        android:src="@drawable/go_able_action_icon" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/logged_in_account_actions_recyclerview"
+            style="@style/logged_in_account_actions_recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/logged_in_account_setting_recyclerview"
+            style="@style/logged_in_account_setting_recyclerview" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

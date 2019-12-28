@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Shopping</string>
+
+    <!--    Actions bar -->
+    <string name="shopping_cart">Shopping cart</string>
+
+    <!--    Bottom Navigation Bar -->
+    <string name="bottom_navigation_home_title">Home</string>
+    <string name="bottom_navigation_category_title">Category</string>
+    <string name="bottom_navigation_search_title">Search</string>
+    <string name="bottom_navigation_account_information_title">Account</string>
+
+    <!--    Menu Item -->
+    <string name="menu_item_shopping_cart">Shopping Cart</string>
+    <string name="menu_item_about_app">About App</string>
+    <string name="menu_item_help">Help</string>
+    <string name="menu_item_version_app">Version %s</string>
+
+    <!--    Home Fragment -->
+    <string name="home_exam_text">Home Fragment</string>
+    <string name="home_search_hint">What are you looking for?</string>
+    <string name="sample_image_title">Image</string>
+    <string name="sample_image_description">Sample Image</string>
+    <string name="home_advertisement_banner_description">Advertisement Banner</string>
+    <string name="buy_now">Buy now</string>
+    <string name="home_deal_superdeal" translatable="false">SUPER DEAL</string>
+    <string name="account_exam_text">Account Fragment</string>
+    <string name="home_deal_item_sample_title" translatable="false">iPad WiFi 32GB New 2018 - Hàng Nhập Khẩu Chính Hãng</string>
+    <string name="home_deal_item_new_price" translatable="false">4.590.000 đ</string>
+    <string name="home_deal_item_old_price" translatable="false">5.490.000 đ</string>
+    <string name="home_deal_item_discount_percent">-20%</string>
+
+
+    <!--    Category Fragment -->
+    <string name="category_exam_text">Category Fragment</string>
+
+    <!--    Search Fragment -->
+    <string name="search_exam_text">Search Fragment</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!--    Account Fragment -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="please_login">Please login to receive super deals from Shopping!</string>
+    <string name="log_out">Log out</string>
+    <string name="signup_name">Full Name</string>
+    <string name="signup_email" translatable="false">Email</string>
+    <string name="signup_phone">Phone number</string>
+    <string name="signup_password">Enter password</string>
+    <string name="signup_retype_password">Confirm password</string>
+    <string name="signup_have_account">Have an account?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_with">Or login with</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="zalo" translatable="false">Zalo</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="login_mail_or_phone">Email/Phone number</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="old_price">Old price</string>
+    <string name="discount">Discount</string>
+    <string name="shopping_cart_sample_discount" translatable="false">-2.140.000 đ</string>
+    <string name="total">Total</string>
+    <string name="vat_included">VAT included</string>
+    <string name="order">Proceed to ordering</string>
+    <string name="not_now">Not now?</string>
+    <string name="success">Sign Up success!</string>
+    <string name="shopping_cart_is_empty">Shopping cart is empty!</string>
+    <string name="continue_shopping">Continue shopping</string>
+    <string name="login_now">Login now for more offers</string>
+    <string name="connection_error">Connection error</string>
+    <string name="error_detail">There was an error, please try again</string>
+    <string name="try_again">Try again</string>
+    <string name="about_product">About Product</string>
+
+</resources>

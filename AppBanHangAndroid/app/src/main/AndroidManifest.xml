@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.edu.uit.trang.shopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="vn.edu.uit.trang.shopping.Activities.AddressActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.OrderActivity"></activity>
+        <activity
+            android:name="vn.edu.uit.trang.shopping.Activities.OrderConfirmActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.OrderActivity" />
+        <activity
+            android:name="vn.edu.uit.trang.shopping.Activities.OrderActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.ShoppingCartActivity" />
+        <activity
+            android:name="vn.edu.uit.trang.shopping.Activities.LoginActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.MainActivity" />
+        <activity
+            android:name="vn.edu.uit.trang.shopping.Activities.SignupActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.MainActivity" />
+        <activity
+            android:name="vn.edu.uit.trang.shopping.Activities.ShoppingCartActivity"
+            android:parentActivityName="vn.edu.uit.trang.shopping.Activities.MainActivity" />
+        <activity android:name="vn.edu.uit.trang.shopping.Activities.DanhSachSanPhamActivity" />
+        <activity android:name="vn.edu.uit.trang.shopping.Activities.ChiTietSanPhamActivity" />
+        <activity android:name="vn.edu.uit.trang.shopping.Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_fragment_linear_layout">
+
+    <!--    Thanh tìm kiếm -->
+    <SearchView
+        android:id="@+id/search_bar"
+        style="@style/home_fragment_search_view" />
+
+    <!--    Khung cuộn -->
+    <androidx.core.widget.NestedScrollView style="@style/home_fragment_nested_scrollview">
+
+        <LinearLayout style="@style/home_fragment_scroll_linearlayout">
+
+            <!--            Khung gợi ý các nhóm hàng dưới thanh tìm kiếm -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_group_recyclerview"
+                style="@style/home_item_group_recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--            Khung quảng cáo -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/advertisement_recyclerview"
+                style="@style/home_advertisement_recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--            tiêu đề SUPER DEAL -->
+            <LinearLayout style="@style/home_super_deal_container">
+
+                <TextView
+                    style="@style/home_fragment_superdeal"
+                    android:text="@string/home_deal_superdeal" />
+            </LinearLayout>
+
+            <!--            Khung giảm giá -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/deal_recyclerview"
+                style="@style/home_fragment_deal_recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

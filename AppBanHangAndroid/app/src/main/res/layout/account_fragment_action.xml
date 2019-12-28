@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/account_action_container">
+
+    <ImageView
+        android:id="@+id/action_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/account_action_icon_imageview" />
+
+    <TextView
+        android:id="@+id/action_title"
+        app:layout_constraintStart_toEndOf="@+id/action_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/account_action_title_textview" />
+
+    <ImageView
+        android:id="@+id/account_go_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/account_go_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/go_disable_action_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

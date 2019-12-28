@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_gray"
+    android:orientation="vertical"
+    tools:context="vn.edu.uit.trang.shopping.Activities.OrderActivity">
+
+    <androidx.core.widget.NestedScrollView style="@style/shopping_cart_scroll_nestscrollview">
+
+        <LinearLayout style="@style/shopping_cart_scroll_linearlayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/part_color_white"
+                android:text="Thông tin các sản phẩm"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:textSize="16sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@color/part_color_white">
+
+                <TextView
+                    android:text="Thông tin giao hàng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoàng Thùy Trang"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0352902224"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"
+                    android:text="KTX Khu B - KTX ĐHQG HCM, Phường Linh Trung, Quận Thủ Đức, Tp.Hồ Chí Minh"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/part_color_white"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:text="Hình thức giao hàng"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Giao hàng siêu tốc"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/part_color_white"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:text="Hình thức thanh toán"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/text_color_black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán tiền mặt"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/part_color_white">
+
+                <TextView
+                    android:id="@+id/ship_title"
+                    style="@style/shopping_cart_detail_price_textview"
+                    android:text="@string/old_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/old_price"
+                    style="@style/shopping_cart_detail_price_textview"
+                    android:text="@string/home_deal_item_old_price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:text="Phí giao hàng:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ship_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:text="15.000 đ"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/old_price"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="27"
+        android:padding="20dp"
+        android:background="@color/dark_white_color">
+
+        <TextView
+            android:text="@string/total"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:text="@string/home_deal_item_old_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/new_price_text_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comfirmbtn"
+            android:text="Đặt hàng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:background="@drawable/oder_button_custom"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="@color/text_color_white"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:layout_marginTop="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/not_login_account_container_linearlayout">
+
+    <TextView
+        android:text="@string/please_login"
+        style="@style/not_login_account_please_login_textview" />
+
+
+    <LinearLayout style="@style/not_login_account_button_container_linearlayout">
+
+        <TextView
+            android:id="@+id/sign_up_button"
+            android:text="@string/sign_up"
+            style="@style/not_login_account_sign_up_textview" />
+        <TextView
+            android:id="@+id/login_button"
+            android:text="@string/login"
+            style="@style/not_login_account_login_textview" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView style="@style/not_log_in_account_actions_nestedscrollview">
+
+        <LinearLayout style="@style/not_log_in_account_actions_linearlayout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/not_log_in_account_actions_recyclerview"
+                style="@style/not_log_in_account_actions_recyclerview"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/not_log_in_account_setting_recyclerview"
+                style="@style/not_log_in_account_setting_recyclerview" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

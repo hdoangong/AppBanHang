@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shopping_cart"
+        android:icon="@drawable/ic_action_shopping_cart"
+        android:title="@string/menu_item_shopping_cart"
+        android:actionLayout="@layout/shopping_cart_actionbar_icon"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/menu_item_about_app"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="@string/menu_item_help"
+        app:showAsAction="never"/>
+
+</menu>

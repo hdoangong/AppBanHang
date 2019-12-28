@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_advertisement_banner_cardview_id"
+    style="@style/home_advertisement_banner_cardview"
+    app:cardCornerRadius="8dp">
+
+    <!--    Tạo layout cho từng quảng cáo -->
+    <LinearLayout style="@style/home_advertisement_linear_layout">
+
+        <!--        Hình ảnh quảng cáo -->
+        <ImageView
+            android:id="@+id/home_advertisement_banner_image_id"
+            style="@style/home_advertisement_banner_image"
+            android:contentDescription="@string/sample_image_title" />
+
+        <LinearLayout style="@style/home_advertisement_title_linear_layout">
+
+            <!--            Nội dung quảng cáo -->
+            <TextView
+                android:id="@+id/home_advertisement_banner_title_id"
+                style="@style/home_advertisement_banner_title" />
+
+            <!--            Buy Now button -->
+            <Button
+                android:id="@+id/home_advertisement_banner_button_id"
+                style="@style/home_advertisement_banner_button"
+                android:text="@string/buy_now" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

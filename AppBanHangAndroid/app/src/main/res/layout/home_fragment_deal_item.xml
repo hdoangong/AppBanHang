@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_deal_item_card_view_id"
+    style="@style/home_deal_item_cardview"
+    app:cardCornerRadius="0dp">
+
+
+<!--    Chứa thông tin tổng quan mặt hàng -->
+    <LinearLayout
+        style="@style/home_deal_item_linearlayout">
+
+<!--        Hình ảnh mặt hàng -->
+        <ImageView
+            android:id="@+id/home_deal_item_image_id"
+            android:contentDescription="@string/sample_image_description"
+
+            style="@style/home_deal_item_image_view"/>
+
+<!--        Tên mặt hàng -->
+        <TextView
+            android:id="@+id/home_deal_item_title_id"
+            android:text="@string/home_deal_item_sample_title"
+            style="@style/home_deal_item_title_textview" />
+
+<!--        Giá đã giảm -->
+        <TextView
+            android:id="@+id/home_deal_item_new_price_id"
+            android:text="@string/home_deal_item_new_price"
+            style="@style/home_deal_item_new_price" />
+
+<!--        Khung chứa giá đã giảm và phần trăm được giảm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            Giá chưa giảm -->
+            <TextView
+                android:id="@+id/home_deal_item_old_price_id"
+                android:text="@string/home_deal_item_old_price"
+                style="@style/home_deal_item_old_price" />
+
+<!--            Phần trăm được giảm -->
+            <TextView
+                android:id="@+id/home_deal_item_discount_percent_id"
+                android:text="@string/home_deal_item_discount_percent"
+                style="@style/home_deal_item_discount_percent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
