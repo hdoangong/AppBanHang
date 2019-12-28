@@ -1,7 +1,7 @@
 # App Bán Hàng
-    ######	Đồ án môn học: Lập trình trên thiết bị di động SE346.J11 Học kì 2019-2020
-    ######	Lớp: SE346.J11 Học kì 2019-2020
-    ######	Giáo viên: Mr. Huỳnh Tuấn Anh Github
+    	Đồ án môn học: Lập trình trên thiết bị di động SE346.J11 Học kì 2019-2020
+    	Lớp: SE346.J11 Học kì 2019-2020
+    	Giáo viên: Mr. Huỳnh Tuấn Anh Github
 ## Giới thiệu:
     -	Hiện nay với sự phát triển không ngừng của công nghệ thì nhu cầu của con người ngày càng tăng. Trong đó mua hàng online là một trong những nhu cầu không thể thiếu của con người.
     -	App bán hàng là một app bán hàng mà nhóm thực hiện để đáp ứng nhu cầu này.
@@ -13,7 +13,7 @@
     -	Cloudinary
     -	Heroku
 ## Giao diện
-- #Màn hình trang chủ#
+- Màn hình trang chủ
 <img src="E:\1">
 
    
