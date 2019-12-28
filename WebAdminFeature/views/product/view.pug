@@ -1,0 +1,20 @@
+extends ../layouts/common.pug
+block content
+
+	h3 View Product
+
+	ul
+		li Tên: 
+			span= product.tenSP
+		li Mô tả:
+			span= product.moTa
+		li Giá:  
+			span= product.gia
+		li Giá cũ:
+			span= product.giaCu
+		li Tỉ lệ giảm giá:
+			span=product.tileGiamGia
+		li Mã danh mục:
+			span=product.maDM
+		// li Hình:
+		// 	span=product.hinh

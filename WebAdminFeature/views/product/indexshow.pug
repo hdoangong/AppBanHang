@@ -1,0 +1,22 @@
+extends ../layouts/common.pug
+
+block content
+	h3 Products
+		.d-flex.align-items-center
+			form.ml-auto(action="/users/search", method="GET", class="d-flex")
+				input(type="text",name="q", class="form-control")
+				button(class="btn btn-primary ml-2") Search
+
+	
+	.row
+		each product in products
+			.col-sm-3.mt-5
+				.card(style='width: 17rem;')
+					img.card-img-top(src='https://picsum.photos/id/237/300/200', alt='...')
+					.card-body
+						h5.card-title=product.name
+						p.card-text Đây là sản phẩm bán chạy nhất trong thời gian vừa qua
+						a.btn.btn-primary(href='/cart/add/' + product.id) Add to cart
+
+
+

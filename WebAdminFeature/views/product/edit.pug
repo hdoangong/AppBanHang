@@ -1,0 +1,41 @@
+extends ../layouts/common.pug
+block content
+
+	h3 Sửa sản phẩm
+
+	if errors
+		each error in errors
+			.alert.alert-danger=error
+
+	form(action="/products/update/" + product.id,method="POST", enctype="multipart/form-data")
+		.form-group
+			label(for="tenSP") Tên sản phẩm
+			input#tenSP.form-control(name="tenSP",type="text",value=values ? values.tenSP :"")
+
+		.form-group
+			label(for="moTa") Mô tả
+			input#moTa.form-control(name="moTa",type="text",value=values ? values.moTa :"")
+		
+		.form-group
+			label(for="gia") Giá
+			input#gia.form-control(name="gia",type="text",value=values ? values.gia :"")
+
+		.form-group
+			label(for="giaCu") Giá cũ
+			input#giaCu.form-control(name="giaCu",type="text",value=values ? values.giaCu :"")
+
+		.form-group
+			label(for="tiLeGiamGia") Tỉ lệ giảm giá
+			input#tiLeGiamGia.form-control(name="tiLeGiamGia",type="text",value=values ? values.tiLeGiamGia :"")
+
+		.form-group
+			label Danh mục
+			select.browser-default.custom-select(name="maDM")
+				if danhmucs
+					each danhmuc in danhmucs
+						option(value=danhmuc._id)= danhmuc.tenDM
+
+		.form-group
+			label(for="hinh") Hình
+			input#hinh.form-control-file(name="hinh",type="file",value=values ? values.hinh :"")
+		button.btn.btn-primary Update

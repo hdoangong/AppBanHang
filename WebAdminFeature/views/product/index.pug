@@ -1,0 +1,30 @@
+extends ../layouts/common.pug
+
+block content
+	h3
+		span.mr-3 Product
+		a.btn.btn-primary(href="/products/create") New
+
+	.d-flex.align-items-center
+		
+
+		form.ml-auto(action="/users/search", method="GET", class="d-flex")
+			input(type="text",name="q", class="form-control")
+			button(class="btn btn-primary ml-2") Search
+	table.table
+		tr
+			th Ảnh
+			th Tên sản phẩm
+			th Giá
+			th Chỉnh sửa
+
+		each product in products
+			tr
+				td
+					img(src=product.hinh,with="100",height="100")
+				td=product.tenSP
+				td=product.gia
+				td
+					a.btn.btn-info(href='/products/view/' + product.id) Xem
+					a.btn.btn-warning(href='/products/edit/'+product.id).ml-2 Sửa
+					a.btn.btn-danger(href='/products/delete/' + product.id).ml-2 Xóa

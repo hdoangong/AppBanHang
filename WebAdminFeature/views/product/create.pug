@@ -1,0 +1,35 @@
+extends ../layouts/common.pug
+block content
+    h3 Tạo sản phẩm
+
+    if errors
+        each error in errors
+            .alert.alert-danger= error
+
+    form(action="/products/create", method="POST", enctype="multipart/form-data")
+        .form-group
+            label(for="tenSP") Tên sản phẩm
+            input#name.form-control(type="text", name="tenSP")
+        .form-group
+            label(for="moTa") Mô tả
+            input#moTa.form-control(type="text", name="moTa")
+        .form-group
+            label(for="gia") Giá
+            input#gia.form-control(type="text", name="gia")
+        .form-group
+            label(for="giaCu") Giá cũ
+            input#giaCu.form-control(type="text", name="giaCu")
+        .form-group
+            label(for="tiLeGiamGia") Tỉ lệ giảm giá
+            input#tiLeGiamGia.form-control(type="text", name="tiLeGiamGia")   
+            
+        .form-group
+            label Danh mục
+            select.browser-default.custom-select(name="maDM")
+                if danhmucs
+                    each danhmuc in danhmucs
+                        option(value=danhmuc._id)= danhmuc.tenDM
+        .form-group
+            label Hình
+            input.form-control-file(type="file", name="hinh", value="chọn file")
+        button.btn.btn-outline-primary Create
